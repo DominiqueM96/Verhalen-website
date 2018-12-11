@@ -25,11 +25,10 @@
 
     <main>
         <details open>
-            <summary>Populair</summary>
+            <summary>Genres</summary>
 
-            <form action="get" id="populair">
+            <form action="get" id="genres">
                 <fieldset>
-                    <legend>Soorten verhalen</legend>
                     <ul>
                         <!-- wel of geen ul/li?  -->
                         <li><label><input type="checkbox">Spannend</label></li>
@@ -37,6 +36,24 @@
                         <li><label><input type="checkbox">Grappig</label></li>
                         <li><label><input type="checkbox">Vrolijk</label></li>
                         <li><label><input type="checkbox">Verdrietig</label></li>
+                        <li><label><input type="checkbox">Verras Me WOW!</label></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </details>
+
+        <details open>
+            <summary>Leestijd</summary>
+
+            <form action="get" id="leestijd">
+                <fieldset>
+                    <ul>
+                        <!-- wel of geen ul/li?  -->
+                        <li><label><input type="checkbox">0 - 5 min</label></li>
+                        <li><label><input type="checkbox">5 - 10 min </label></li>
+                        <li><label><input type="checkbox">10 - 20 min</label></li>
+                        <li><label><input type="checkbox">20 - 30 min</label></li>
+                        <li><label><input type="checkbox">30 min of langer </label></li>
                     </ul>
                 </fieldset>
             </form>
@@ -44,12 +61,14 @@
     </main>
 
     <section>
-        <h2>Populair</h2>
-        <p> introtekstje </p>
+        <h2>Verhalen</h2>
+        <h4>Populair</h4>
+        <h4>Aanbevolen</h4>
+        <h4>Nieuw</h4>
     </section>
 
     <article>
-        <img src="img/verhaal.png" alt="verhaal">
+        <img src="img/droom.png" alt="Droom">
         <span>Droom</span>
         <h3>Droom</h3>
 
@@ -60,6 +79,7 @@
 
     </article>
     <article>
+        <img src="img/droom.png" alt="Droom">
         <h3>Mop</h3>
 
         <footer>
@@ -68,6 +88,7 @@
 
     </article>
     <article>
+        <img src="img/droom.png" alt="Droom">
         <h3>Letterlijk</h3>
 
         <footer>
@@ -75,34 +96,6 @@
         </footer>
 
     </article>
-
-    <section>
-        <h2>Aanbevolen</h2>
-        <article>
-            <h3>Stoned</h3>
-
-            <footer>
-                <button>downloaden</button>
-            </footer>
-
-        </article>
-        <article>
-            <h4>Kater</h4>
-
-            <footer>
-                <button>downloaden</button>
-            </footer>
-
-        </article>
-        <article>
-            <h4>Lepra</h4>
-
-            <footer>
-                <button>downloaden</button>
-            </footer>
-
-        </article>
-    </section>
 
 </body>
 
