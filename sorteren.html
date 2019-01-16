@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WOW air verhalen website</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ayq2dlk.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <!--nog link naar home pagina in href zetten -->
+                    <a href="index.html"><img src="img/logowowair.png" alt="logo wow air"></a>
+                </li>
+                <li>
+                    <!--nog een button in css van maken met img ipv tekst -->
+                    <a href="downloads.html"><img src="img/download.png" alt="downloads" id="download"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1> 99 verhalen mee op reis <br><br>
+            <i class="fas fa-sun fa-2x"></i>
+            <i class="fas fa-suitcase fa-2x"></i>
+            <i class="fas fa-road fa-2x"></i>
+            <i class="fas fa-plane fa-2x"></i></h1>
+    </section>
+    <section id="filter">
+        <details open>
+            <summary><i class="fas fa-book-open"></i>Genres</summary>
+
+            <form action="get">
+                <fieldset>
+                    <legend>Genres</legend>
+                    <ul class="forms">
+                        <li><input type="radio" name="genres"><i class="fas fa-ghost fa-2x"></i><label>Spannend</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-balance-scale fa-2x"></i>Rustgevend</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-smile fa-2x"></i>Grappig</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-sun fa-2x"></i><br>Vrolijk</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-frown fa-2x"></i>Verdrietig</label></li>
+                        <li><label><input type="radio" name="genres" class="WOW">Verras Me WOW!</label></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </details>
+
+        <details open>
+            <summary><i class="fas fa-clock"></i>Leestijd</summary>
+
+            <form action="get">
+                <fieldset>
+                    <legend>Leestijd</legend>
+                    <ul class="forms">
+                        <li><label><input type="radio" name="leestijd">> 5 min</label></li>
+                        <li><label><input type="radio" name="leestijd">> 10 min </label></li>
+                        <li><label><input type="radio" name="leestijd">> 15 min</label></li>
+                        <li><label><input type="radio" name="leestijd">> 20 min</label></li>
+                    </ul>
+                </fieldset>
+            </form>
+            <a href="resultaten.html"><button type="button">Verhalen zoeken</button></a>
+        </details>
+
+    </section>
+
+    <main>
+        <!--verhalen sorteren-->
+        <h2>Verhalen</h2>
+        <h5>Ontdek de verhalen</h5>
+        <div>
+            <form action="post">
+                <input class="sorteren" type="radio" name="sorteren" id="Populair">
+                <label for="Populair" id="populair">Populair</label>
+                <input class="sorteren" type="radio" name="sorteren" id="Aanbevolen" checked>
+                <label for="Aanbevolen" id="aanbevolen">Aanbevolen</label>
+                <input class="sorteren" type="radio" name="sorteren" id="Nieuw">
+                <label for="Nieuw" id="nieuw">Nieuw</label>
+                <input type="submit" name="sorteren" value="verstuur">
+            </form>
+        </div>
+
+        <!--verhalen-->
+        <article>
+            <img src="img/preview%20stoned.jpeg" alt="Droom">
+            <h3>STONED</h3>
+            <p> <i class="fas fa-star fa-2x"></i>
+                <i class="fas fa-star fa-2x"></i>
+                <i class="fas fa-star fa-2x"></i></p>
+            <p class="preview">Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de atmosfeer in. Het miezert een beetje en..</p>
+            <p><i class="fas fa-clock"></i>3 min</p>
+            <footer>
+                <button><img src="img/download.png" alt="downloads" class="download"></button>
+            </footer>
+        </article>
+
+        <article>
+            <img src="img/preview%20verhaal1.jpeg" alt="Droom">
+            <h3>DE COCK EN HET RAADSEL VAN HET VERDWENEN BOEK</h3>
+            <p> <i class="fas fa-star fa-2x"></i>
+                <i class="fas fa-star fa-2x"></i>
+                <i class="fas fa-star fa-2x"></i></p>
+            <p class="preview">Stationsplein, 12.00 uur in de middag De Cock met C-O-C-K. stapte de bus uit. In de kruiwagen die De Cock voortduwde lag zijn trouwe kompaan Vledder...</p>
+            <p> <i class="fas fa-clock"></i>10 min</p>
+            <footer>
+                <button><img src="img/download.png" alt="downloads" class="download"></button>
+            </footer>
+        </article>
+
+        <article>
+            <img src="img/droom.png" alt="Droom">
+            <h3>DROOM</h3>
+            <p> <i class="fas fa-star fa-2x"></i>
+                <i class="fas fa-star fa-2x"></i>
+                <i class="fas fa-star fa-2x"></i></p>
+            <p class="preview">Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij...</p>
+            <p><i class="fas fa-clock"></i>8 min</p>
+            <footer>
+                <button><img src="img/download.png" alt="downloads" class="download"></button>
+            </footer>
+        </article>
+
+
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>

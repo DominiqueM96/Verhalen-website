@@ -1,11 +1,12 @@
-var genre = document.querySelector('main form:first-of-type input:first-of-type');
+var populair = document.querySelector('main form:first-of-type input:first-of-type');
 var form = document.querySelector('main form:first-of-type');
 
-
-
 function formSubmit() {
+    form.action = "sorteren.html";
     form.submit();
-    form.action('populair.html');
 }
 
-genre.addEventListener('click', formSubmit);
+function formSubmitTwee() {
+    form.action = "sorteren.html";
+    form.submit();
+}

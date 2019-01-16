@@ -28,24 +28,26 @@
 
     <section>
         <h1> 99 verhalen mee op reis <br><br>
+
             <i class="fas fa-sun fa-2x"></i>
             <i class="fas fa-suitcase fa-2x"></i>
             <i class="fas fa-road fa-2x"></i>
             <i class="fas fa-plane fa-2x"></i></h1>
+
     </section>
     <section id="filter">
-        <details>
+        <details open>
             <summary><i class="fas fa-book-open"></i>Genres</summary>
 
-            <form action="get" id="genres">
+            <form action="get">
                 <fieldset>
                     <legend>Genres</legend>
-                    <ul>
+                    <ul class="forms">
                         <li><input type="radio" name="genres"><i class="fas fa-ghost fa-2x"></i><label>Spannend</label></li>
-                        <li><input type="radio" name="genres"><i class="fas fa-balance-scale fa-2x"></i><label>Rustgevend</label></li>
-                        <li><input type="radio" name="genres"><i class="fas fa-smile fa-2x"></i><label>Grappig</label></li>
-                        <li><input type="radio" name="genres"><i class="fas fa-sun fa-2x"></i><br><label>Vrolijk</label></li>
-                        <li><input type="radio" name="genres"><i class="fas fa-frown fa-2x"></i><label>Verdrietig</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-balance-scale fa-2x"></i>Rustgevend</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-smile fa-2x"></i>Grappig</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-sun fa-2x"></i><br>Vrolijk</label></li>
+                        <li><label><input type="radio" name="genres"><i class="fas fa-frown fa-2x"></i>Verdrietig</label></li>
                         <li><label><input type="radio" name="genres" class="WOW">Verras Me WOW!</label></li>
                     </ul>
                 </fieldset>
@@ -55,10 +57,10 @@
         <details open>
             <summary><i class="fas fa-clock"></i>Leestijd</summary>
 
-            <form action="get" id="leestijd">
+            <form action="get">
                 <fieldset>
                     <legend>Leestijd</legend>
-                    <ul>
+                    <ul class="forms">
                         <li><label><input type="radio" name="leestijd">> 5 min</label></li>
                         <li><label><input type="radio" name="leestijd">> 10 min </label></li>
                         <li><label><input type="radio" name="leestijd">> 15 min</label></li>
@@ -66,7 +68,7 @@
                     </ul>
                 </fieldset>
             </form>
-            <button type="submit">Verhalen zoeken</button>
+            <a href="resultaten.html" class="verhalenzoeken">Verhalen zoeken</a>
         </details>
 
     </section>
@@ -77,7 +79,7 @@
         <h5>Ontdek de verhalen</h5>
         <div>
             <form action="post">
-                <input class="sorteren" type="radio" name="sorteren" id="Populair">
+                <input class="sorteren" type="radio" name="sorteren" id="Populair" checked>
                 <label for="Populair" id="populair">Populair</label>
                 <input class="sorteren" type="radio" name="sorteren" id="Aanbevolen">
                 <label for="Aanbevolen" id="aanbevolen">Aanbevolen</label>
@@ -85,49 +87,87 @@
                 <label for="Nieuw" id="nieuw">Nieuw</label>
                 <input type="submit" name="sorteren" value="verstuur">
             </form>
-        </div>
+        </div> <br>
 
         <!--verhalen-->
+        <section>
+            <article>
+                <img src="img/droom.png" alt="Droom">
+                <h3>DROOM</h3>
+                <p> <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i></p>
+                <p class="preview">Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij...<a href="verhaal.html">Lees verder</a></p>
+                <p><i class="fas fa-clock"></i>8 min</p>
+                <footer>
+                    <button><img src="img/download.png" alt="downloads" class="download"></button>
+                </footer>
+            </article>
 
-        <article>
-            <img src="img/droom.png" alt="Droom">
-            <h3>DROOM</h3>
-            <p> <i class="fas fa-star fa-2x"></i>
-                <i class="fas fa-star fa-2x"></i>
-                <i class="fas fa-star fa-2x"></i></p>
-            <p class="preview">Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij...</p>
-            <p><i class="fas fa-clock"></i>8 min</p>
-            <footer>
-                <button><img src="img/download.png" alt="downloads" class="download"></button>
-            </footer>
-        </article>
+            <article>
+                <img src="img/preview%20verhaal1.jpeg" alt="decock">
+                <h3>DE COCK EN HET RAADSEL VAN HET VERDWENEN BOEK</h3>
+                <p> <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i></p>
+                <p class="preview">Stationsplein, 12.00 uur in de middag De Cock met C-O-C-K. stapte de bus uit. In de kruiwagen die De Cock voortduwde lag zijn trouwe kompaan Vledder...<a href="verhaal.html">Lees verder</a></p>
+                <p> <i class="fas fa-clock"></i>10 min</p>
+                <footer>
+                    <button><img src="img/download.png" alt="downloads" class="download"></button>
+                </footer>
+            </article>
 
-        <article>
-            <img src="img/preview%20verhaal1.jpeg" alt="Droom">
-            <h3>DE COCK EN HET RAADSEL VAN HET VERDWENEN BOEK</h3>
-            <p> <i class="fas fa-star fa-2x"></i>
-                <i class="fas fa-star fa-2x"></i>
-                <i class="fas fa-star fa-2x"></i></p>
-            <p class="preview">Stationsplein, 12.00 uur in de middag De Cock met C-O-C-K. stapte de bus uit. In de kruiwagen die De Cock voortduwde lag zijn trouwe kompaan Vledder...</p>
-            <p> <i class="fas fa-clock"></i>10 min</p>
-            <footer>
-                <button><img src="img/download.png" alt="downloads" class="download"></button>
-            </footer>
-        </article>
+            <article>
+                <img src="img/preview%20stoned.jpeg" alt="stoned">
+                <h3>STONED</h3>
+                <p> <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i></p>
+                <p class="preview">Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de atmosfeer in. Het miezert een beetje en..<a href="verhaal.html">Lees verder</a></p>
+                <p><i class="fas fa-clock"></i>3 min</p>
+                <footer>
+                    <button><img src="img/download.png" alt="downloads" class="download"></button>
+                </footer>
+            </article>
 
-        <article>
-            <img src="img/preview%20stoned.jpeg" alt="Droom">
-            <h3>STONED</h3>
-            <p> <i class="fas fa-star fa-2x"></i>
-                <i class="fas fa-star fa-2x"></i>
-                <i class="fas fa-star fa-2x"></i></p>
-            <p class="preview">Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de atmosfeer in. Het miezert een beetje en..</p>
-            <p><i class="fas fa-clock"></i>3 min</p>
-            <footer>
-                <button><img src="img/download.png" alt="downloads" class="download"></button>
-            </footer>
-        </article>
+            <article>
+                <img src="img/droom.png" alt="Droom">
+                <h3>DROOM</h3>
+                <p> <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i></p>
+                <p class="preview">Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij...<a href="verhaal.html">Lees verder</a></p>
+                <p><i class="fas fa-clock"></i>8 min</p>
+                <footer>
+                    <button><img src="img/download.png" alt="downloads" class="download"></button>
+                </footer>
+            </article>
+            <article>
+                <img src="img/preview%20verhaal1.jpeg" alt="decock">
+                <h3>DE COCK EN HET RAADSEL VAN HET VERDWENEN BOEK</h3>
+                <p> <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i></p>
+                <p class="preview">Stationsplein, 12.00 uur in de middag De Cock met C-O-C-K. stapte de bus uit. In de kruiwagen die De Cock voortduwde lag zijn trouwe kompaan Vledder...<a href="verhaal.html">Lees verder</a></p>
+                <p> <i class="fas fa-clock"></i>10 min</p>
+                <footer>
+                    <button><img src="img/download.png" alt="downloads" class="download"></button>
+                </footer>
+            </article>
 
+            <article>
+                <img src="img/preview%20stoned.jpeg" alt="stoned">
+                <h3>STONED</h3>
+                <p> <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i>
+                    <i class="fas fa-star fa-2x"></i></p>
+                <p class="preview">Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de atmosfeer in. Het miezert een beetje en..<a href="verhaal.html">Lees verder</a></p>
+                <p><i class="fas fa-clock"></i>3 min</p>
+                <footer>
+                    <button><img src="img/download.png" alt="downloads" class="download"></button>
+                </footer>
+            </article>
+        </section>
     </main>
     <script src="js.js"></script>
 </body>
