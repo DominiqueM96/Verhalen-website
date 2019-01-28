@@ -1,9 +1,10 @@
 body {
     font-family: 'museo-sans', sans-serif, 'helvetica';
+    margin-left: 0;
+    margin-right: 0;
 }
 
-
-/*header*/
+/*HEADER*/
 
 header ul {
     display: flex;
@@ -12,8 +13,33 @@ header ul {
     position: relative;
 }
 
+nav {
+    position: relative;
+}
+
+nav section {
+    position: absolute;
+    right: .8em;
+    top: -.5em;
+    background-color: #FBDD71;
+    display: none;
+    border-radius: 50%;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+/*logo wow air*/
+
 header li:first-child {
     position: relative;
+}
+
+header li img:nth-child(1) {
+    width: 4.5em;
+    height: 4.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -28,13 +54,7 @@ header {
     background-color: #fff;
 }
 
-header li img:nth-child(1) {
-    width: 4.5em;
-    height: 4.5em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*download button in header en tekst*/
 
 #download {
     height: auto;
@@ -44,31 +64,46 @@ header li img:nth-child(1) {
     top: 10%;
 }
 
-
-/*    download button kleiner maken*/
-
-header img:nth-child(2) {
-    height: 2em;
-    width: auto;
+header nav p {
+    font-size: .7em;
+    position: absolute;
+    right: 5.5em;
+    top: 5%;
+    color: gray;
 }
 
-.download {
-    height: 2em;
-    width: auto;
+/*ANIMATIE: 1 BIJ MIJN DOWNLOADS*/
+
+nav section.aan {
+    display: block;
+    animation: show 0.3s forwards;
+    animation-delay: 1.7s;
+    opacity: 0;
 }
 
-h1,
-h5 {
-    display: inline-block;
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*TITEL PAGINA*/
+
+h1 {
     margin-top: 4em;
 }
 
-h5 {
-    margin-left: .5em;
+h1,
+.tekst {
+    display: inline-block;
 }
 
-
-/*verhalen*/
+/*VERHALEN*/
+/*verhaal blokken*/
 
 article {
     font-size: 1em;
@@ -76,9 +111,6 @@ article {
     background-color: #fff;
     padding-top: 0;
     margin-top: 4em;
-}
-
-article {
     border: 1px solid #7F8081;
     padding-bottom: 1rem;
     margin: 1rem;
@@ -87,16 +119,28 @@ article {
     grid-template-columns: 3fr 1fr;
 }
 
-.preview {
+/*preview tekstje*/
+
+p.preview {
     font-size: .7em;
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     padding-left: 1.8em;
+    object-fit: cover;
+    padding-right: 1.8em;
 }
+
+/*verhaal titel*/
 
 h3 {
     padding-left: 1em;
     margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    margin-top: 3em;
+    padding-top: .5em;
 }
+
+/*afbeelding verhaal*/
 
 article img:first-of-type {
     /*afbeelding breedte van article*/
@@ -109,40 +153,23 @@ article img:first-of-type {
     grid-row: 1 / 2;
 }
 
+/*klokje*/
+
 p i:last-of-type {
     padding-right: 0.5em;
+    display: inline;
 }
 
-article img:last-child {
-    width: 100%;
-    height: auto;
-    width: 1.7em;
-}
-
-article button {
-    align-self: flex-end;
-    object-position: right bottom;
-    font-size: inherit;
-    background-color: transparent;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    border: none;
-    padding-left: 5em;
-    padding-top: 2em;
-}
-
-footer p {
-    color: #FCDE72;
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-}
+/*sterren*/
 
 article p:first-of-type {
     color: #FCDE72;
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    margin-top: 7.5em;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    margin-left: 1.2em;
 }
+
+/*leestijd labeltje*/
 
 article p:nth-of-type(3) {
     grid-column: 1 / 3;
@@ -158,3 +185,86 @@ article p:nth-of-type(3) {
     text-align: center;
     padding-top: .5em;
 }
+
+/*lees verder link*/
+
+section p a {
+    color: #982682;
+    text-decoration: none;
+    padding-left: .4em;
+}
+
+/*verhaal downloaden button*/
+
+article img:last-child {
+    width: 1.4em;
+    height: 2em;
+}
+
+article button {
+    align-self: flex-end;
+    object-position: right bottom;
+    font-size: inherit;
+    background-color: transparent;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    border: none;
+    padding-left: 50%em;
+    padding-top: 20%;
+    position: relative;
+}
+
+article footer {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: .5em;
+    margin-left: 3.4em;
+    margin-right: auto;
+    position: absolute;
+}
+
+/*animatie download button*/
+
+article footer button:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/laden.gif");
+    background-size: 1.99em;
+    background-repeat: no-repeat;
+    animation: laden 3s forwards;
+    display: none;
+}
+
+@keyframes laden {
+    100% {
+        background-image: url("../img/done.png");
+        background-size: 1.99em;
+        background-position: center;
+        padding-top: .6em;
+    }
+}
+
+article footer button.active:after {
+    display: block;
+}
+
+/*MULTIDEVICE*/
+
+@media (min-width: 48em) {
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 61em) {
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }

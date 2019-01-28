@@ -1,161 +1,185 @@
-                                    body {
-                                    font-family: 'museo-sans', sans-serif, 'helvetica';
-                                }
-                                /*header*/
-                                
-                                header ul {
-                                    display: flex;
-                                    justify-content: center;
-                                    list-style: none;
-                                    position: relative;
-                                }
-                                
-                                header li:first-child {
-                                    position: relative;
-                                }
-                                
-                                header {
-                                    position: fixed;
-                                    top: 0;
-                                    left: 0;
-                                    right: 0;
-                                    z-index: 1;
-                                    margin-bottom: 1em;
-                                    border-bottom: 1px solid #A5C3C3;
-                                    height: 4.5em;
-                                    background-color: #fff;
-                                }
-                                
-                                header li img:nth-child(1) {
-                                    width: 4.5em;
-                                    height: 4.5em;
-                                    display: block;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                #download {
-                                    height: auto;
-                                    width: 2.7em;
-                                    position: absolute;
-                                    right: 1em;
-                                    top: 10%;
-                                }
-                                /*    download button kleiner maken*/
-                                
-                                header img:nth-child(2) {
-                                    height: 2em;
-                                    width: auto;
-                                }
-                                
-                                .download {
-                                    height: 2em;
-                                    width: auto;
-                                }
-                                /*main*/
-                                
-                                main {
-                                    position: relative;
-                                    background-color: #FBFAFB;
-                                    box-shadow: 0 0.2em 0.2em #eee;
-                                    max-width: 35em;
-                                    margin: auto;
-                                    margin-top: 6em;
-                                }
-                                
-                                main h1,
-                                main h5 {
-                                    display: inline-block;
-                                    margin: 0;
-                                }
-                                
-                                .verhaal1,
-                                .verhaal2 {
-                                    height: auto;
-                                    width: 80%;
-                                    display: block;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                }
-                                
-                                main p:nth-of-type(2) {
-                                    color: #FBDD71;
-                                }
-                                
-                                main p:nth-of-type(3) {
-                                    color: #962080;
-                                    margin-left: 85%;
-                                }
-                                
-                                main p:nth-of-type(4) {
-                                    transform: skewY(20deg);
-                                }
-                                
-                                main button {
-                                    margin-left: 82%;
-                                    border-color: transparent;
-                                    background-color: transparent;
-                                    height: auto;
-                                    width: 6em;
-                                    margin-bottom: 2em;
-                                    position: relative;
-                                }
-                                
-                                main button:after {
-                                    content: "";
-                                    height: 100%;
-                                    width: 100%;
-                                    position: absolute;
-                                    left: 0;
-                                    top: 0;
-                                    background-image: url("../img/laden.gif");
-                                    background-size: 1.99em;
-                                    background-repeat: no-repeat;
-                                    animation: laden 2s forwards;
-                                    display: none;
-                                }
-                                
-                                @keyframes laden {
-                                    100% {
-                                        background-image: url("../img/done.png");
-                                        background-size: 1.99em;
-                                        background-position: center;
-                                        padding-top: 1.6em;
-                                    }
-                                }
-                                
-                                article footer button.active:after {
-                                    display: block;
-                                }
-                                /*footer*/
-                                
-                                footer h2,
-                                footer h5 {
-                                    display: inline-block;
-                                    margin-bottom: 1em;
-                                }
-                                
-                                footer img {
-                                    height: auto;
-                                    width: 20%;
-                                    padding: .5em;
-                                    margin: auto;
-                                }
-                                
-                                footer div {
-                                    display: table-cell;
-                                    vertical-align: middle;
-                                    text-align: center
-                                }
-                                /*multidevice*/
-                                
-                                @media (max-width: 47.9em) {
-                                    .verhaal1 {
-                                        display: none;
-                                    }
-                                }
-                                
-                                @media (min-width: 48em) and (max-width:100em) {
-                                    .verhaal2 {
-                                        display: none;
-                                    }
+body {
+    font-family: 'museo-sans', sans-serif, 'helvetica';
+}
+
+/*header*/
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+header li:first-child {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #A5C3C3;
+    height: 4.5em;
+    background-color: #fff;
+}
+
+header li img:nth-child(1) {
+    width: 4.5em;
+    height: 4.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#download {
+    height: auto;
+    width: 2.7em;
+    position: absolute;
+    right: 1em;
+    top: 10%;
+}
+
+/*    download button kleiner maken*/
+
+header img:nth-child(2) {
+    height: 2em;
+    width: auto;
+}
+
+.download {
+    height: 2em;
+    width: auto;
+}
+
+/*main*/
+
+main {
+    position: relative;
+    margin: auto;
+    margin-top: 6em;
+}
+
+h1,
+.schrijver {
+    display: inline-block;
+    margin: 0;
+}
+
+.verhaal1,
+.verhaal2 {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sterren {
+    color: #FBDD71;
+}
+
+.klok {
+    color: #962080;
+    margin-left: 85%;
+}
+
+main button {
+    margin-left: 84%;
+    border-color: transparent;
+    background-color: transparent;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+main button:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/laden.gif");
+    background-size: 1.99em;
+    background-repeat: no-repeat;
+    animation: laden 2s forwards;
+    display: none;
+}
+
+@keyframes laden {
+    100% {
+        background-image: url("../img/done.png");
+        background-size: 1.99em;
+        background-position: center;
+        padding-top: 1.6em;
+    }
+}
+
+article footer button.active:after {
+    display: block;
+}
+
+/*achtergrond verhaal*/
+
+section h1 {
+    color: #FBFAFB;
+    margin-top: 1em;
+    transform: skewY(15deg);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 5em;
+    margin-left: 50%;
+}
+
+section {
+    background-image: url(../img/achtergrond%20verhaal-01.png);
+    background-size: 100%;
+    height: 50em;
+}
+
+section p {
+    transform: skewY(15deg);
+    color: #FBFAFB;
+}
+
+marquee {
+    color: #FBFAFB;
+    transform: skewY(15deg);
+}
+
+/*footer*/
+
+footer h2,
+.schrijver {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+footer img {
+    height: auto;
+    width: 20%;
+    padding: .5em;
+    margin: auto;
+}
+
+footer div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+/*multidevice*/
+
+@media (max-width: 47.9em) {
+    .verhaal1 {
+        display: none;
+    }
+}
+
+@media (min-width: 48em) and (max-width:100em) {
+    .verhaal2 {
+        display: none;
+    }
