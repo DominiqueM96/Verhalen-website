@@ -2,7 +2,7 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
-var downloadBtn = document.querySelectorAll('article footer>button');
+var downloadBtn = document.querySelectorAll('main button');
 
 
 for (var i = 0; i < downloadBtn.length; i++) {

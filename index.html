@@ -15,14 +15,16 @@
         <nav>
             <ul>
                 <li>
-                    <!--nog link naar home pagina in href zetten -->
                     <a href="index.html"><img src="img/logowowair.png" alt="logo wow air"></a>
                 </li>
                 <li>
-                    <!--nog een button in css van maken met img ipv tekst -->
+                    <p>Mijn Downloads</p>
                     <a href="downloads.html"><img src="img/download.png" alt="downloads" id="download"></a>
                 </li>
             </ul>
+            <section>
+                1
+            </section>
         </nav>
     </header>
 
@@ -42,14 +44,16 @@
             <form action="get">
                 <fieldset>
                     <legend>Genres</legend>
-                    <ul class="forms">
-                        <li><input type="radio" name="genres"><i class="fas fa-ghost fa-2x"></i><label>Spannend</label></li>
-                        <li><label><input type="radio" name="genres"><i class="fas fa-balance-scale fa-2x"></i>Rustgevend</label></li>
-                        <li><label><input type="radio" name="genres"><i class="fas fa-smile fa-2x"></i>Grappig</label></li>
-                        <li><label><input type="radio" name="genres"><i class="fas fa-sun fa-2x"></i><br>Vrolijk</label></li>
-                        <li><label><input type="radio" name="genres"><i class="fas fa-frown fa-2x"></i>Verdrietig</label></li>
-                        <li><label><input type="radio" name="genres" class="WOW">Verras Me WOW!</label></li>
-                    </ul>
+                    <div>
+                        <ul class="forms">
+                            <li><input type="radio" name="genres"><i class="fas fa-ghost fa-2x"></i><label>Spannend</label></li>
+                            <li><label><input type="radio" name="genres"><i class="fas fa-balance-scale fa-2x"></i>Rustgevend</label></li>
+                            <li><label><input type="radio" name="genres"><i class="fas fa-smile fa-2x"></i>Grappig</label></li>
+                            <li><label><input type="radio" name="genres"><i class="fas fa-sun fa-2x"></i><br>Vrolijk</label></li>
+                            <li><label><input type="radio" name="genres"><i class="fas fa-frown fa-2x"></i>Verdrietig</label></li>
+                            <li><label><input type="radio" name="genres" class="WOW">Verras Me WOW!</label></li>
+                        </ul>
+                    </div>
                 </fieldset>
             </form>
         </details>
@@ -76,7 +80,7 @@
     <main>
         <!--verhalen sorteren-->
         <h2>Verhalen</h2>
-        <h5>Ontdek de verhalen</h5>
+        <p class="ontdek">Ontdek de verhalen</p>
         <div>
             <form action="post">
                 <input class="sorteren" type="radio" name="sorteren" id="Populair" checked>
@@ -100,9 +104,7 @@
                 <p class="preview">Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij...<a href="verhaal.html">Lees verder</a></p>
                 <p><i class="fas fa-clock"></i>8 min</p>
                 <footer>
-                    <button class="download">
-            <span>Download</span>
-            </button>
+                    <button><img src="img/download.png" alt="downloads" class="download"></button>
                 </footer>
             </article>
 
@@ -172,6 +174,7 @@
         </section>
     </main>
     <script src=js/js.js></script>
+    <script src=js/jsbutton.js></script>
 </body>
 
 </html>
