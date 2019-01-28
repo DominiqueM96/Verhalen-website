@@ -422,7 +422,7 @@ article footer button.active:after {
 
 /*MULTIDEVICE*/
 
-@media (min-width: 20em) {
+@media (min-width: 35em) {
     main section {
         grid-template-columns: auto auto;
     }
