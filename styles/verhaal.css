@@ -55,6 +55,14 @@ header img:nth-child(2) {
     width: auto;
 }
 
+header nav p {
+    font-size: .7em;
+    position: absolute;
+    right: 5.5em;
+    top: 5%;
+    color: gray;
+}
+
 /*main*/
 
 main {

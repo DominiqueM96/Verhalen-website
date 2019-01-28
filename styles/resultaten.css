@@ -57,6 +57,14 @@ header img:nth-child(2) {
     width: auto;
 }
 
+header nav p {
+    font-size: .7em;
+    position: absolute;
+    right: 5.5em;
+    top: 5%;
+    color: gray;
+}
+
 
 /*forms*/
 
@@ -127,24 +135,6 @@ section form i {
     padding-right: 0.5em;
 }
 
-
-/*
-section button {
-    background-color: #962080;
-    color: white;
-    padding-top: .7em;
-    padding-bottom: .7em;
-    text-align: center;
-    font-size: 1em;
-    border-radius: 1em;
-    margin-left: 11em;
-    margin-bottom: 1em;
-}
-*/
-
-
-/*section boven de verhalen*/
-
 section p {
     color: #962080;
     text-align: right;
@@ -154,7 +144,8 @@ section p {
 
 section button {
     border: none;
-    margin-left: 86%;
+    margin-left: 88%;
+    ;
 }
 
 section img {
