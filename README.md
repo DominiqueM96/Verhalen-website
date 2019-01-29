@@ -1,4 +1,5 @@
 # Verhalen-website
+Het verhaal is nu ook in html & CSS gemaakt :)
 
 WOW air krijgt nu ook een verhalenwebsite. Deze website vermaakt de reizigers onderweg met leuke en spannende verhalen.
 Deze website is een verlengstuk van WOW air dus de opdracht is om de huisstijl en tone-of-voice te behouden.
